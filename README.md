@@ -1,1 +1,1 @@
-# templates
+# Przykład użycia szablonu do konwersji zmiennych
