@@ -17,7 +17,7 @@ int main()
     cout << setprecision(20);
 
     double PI = 3.14159265358979323846;
-    cout << "PI: " << PI << endl;
+    cout << "PI: " << PI << endl << endl;
 
     cout << "1: " << conversion<float>(PI) << endl;
     cout << "2: " << conversion<float, float>(PI) << endl;
