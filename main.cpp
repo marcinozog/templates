@@ -14,19 +14,22 @@ T conversion(U u){
 
 int main()
 {
-    cout << setprecision(10);
+    cout << setprecision(20);
 
-    cout << conversion<float>(M_PI) << endl;
-    cout << conversion<float, float>(M_PI) << endl;
-    cout << conversion<float, int>(M_PI) << endl;
-    cout << conversion<int, float>(M_PI) << endl;
+    double PI = 3.14159265358979323846;
+    cout << "PI: " << PI << endl;
 
-    cout << conversion<double>(M_PI) << endl;
-    cout << conversion<double, float>(M_PI) << endl;
-    cout << conversion<float, double>(M_PI) << endl;
+    cout << "1: " << conversion<float>(PI) << endl;
+    cout << "2: " << conversion<float, float>(PI) << endl;
+    cout << "3: " << conversion<float, int>(PI) << endl;
+    cout << "4: " << conversion<int, float>(PI) << endl;
 
-    cout << conversion<short>(M_PI) << endl;
-    cout << conversion<long>(M_PI) << endl;
+    cout << "5: " << conversion<double>(PI) << endl;
+    cout << "6: " << conversion<double, float>(PI) << endl;
+    cout << "7: " << conversion<float, double>(PI) << endl;
+
+    cout << "8: " << conversion<short>(PI) << endl;
+    cout << "9: " << conversion<long>(PI) << endl;
 
     return 0;
 }
